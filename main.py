@@ -73,8 +73,8 @@ if __name__ == '__main__':
     caps_handler = CommandHandler('caps', caps)
     dispatcher.add_handler(caps_handler)
 
-    # quote_handler = CommandHandler('quote', quote)
-    # dispatcher.add_handler(quote_handler)
+    quote_handler = CommandHandler('quote', quote)
+    dispatcher.add_handler(quote_handler)
 
     unknown_handler = MessageHandler(Filters.command, unknown)
     dispatcher.add_handler(unknown_handler)
